@@ -58,6 +58,9 @@ h2 {
     justify-content: space-between;
 }
 
+.header_list a:hover {
+    color: #ccc;
+}
 
 .banner {
     display: flex;
@@ -272,7 +275,7 @@ h2 {
     justify-content: space-between;
 }
 
-.footer a:active,.footer a:visited {
+.footer a, .footer a:active,.footer a:visited {
     color: #fff;
 }
 
