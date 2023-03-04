@@ -111,7 +111,7 @@ h2 {
 
 .email_form input[type="email"]:focus, 
 .edm_form input[type="email"]:focus {
-    box-shadow: 0 0 2px red;
+    box-shadow: 0 0 3px red;
 }
 
 .email_form input[type="button"]:hover, 
@@ -151,7 +151,7 @@ h2 {
     content: "";
     background: url(./images/bg-curve-desktop.svg) no-repeat center center / contain ;
     height: 200px;
-    width: 100vw;
+    width: calc(100vw - 200px);
     position: absolute;
     top: -110px;
 }
@@ -340,6 +340,10 @@ h2 {
         padding-bottom: 80px;
     }
 
+    .container::before {
+        width: calc(100vw - 40px);
+    }
+
     .banner_text, 
     .container_text {
         text-align: center;
@@ -371,7 +375,7 @@ h2 {
     
     input[type="button"] {
         width: 400px;
-
+        margin: 0 auto;
     }
 
     .container::before {
@@ -441,13 +445,18 @@ h2 {
 }
 
 @media (max-width: 576px) {
+    .padding-x-100 {
+        padding: 10px;
+    }
+    
     .warp {
-        min-width: 320px;
         margin: 0 auto;
     }
 
     .header {
         flex-direction: column;
+        margin-top: 20px;
+        padding: 0;
     }
 
     .header_list ul {
@@ -455,30 +464,50 @@ h2 {
         align-items: center;
         margin-top: 16px;
         font-size: 1.2em;
+        width: calc(100vw - 20px);
     }
 
-    .header_list ul a {
-        padding: 8px;
-        display: inline-block;
+    .header_list ul li {
+        display: block;
+        width: 100%;
+    }
+    
+    .header_list a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        padding-bottom: 50px;
     }
 
     .banner_img img, 
     .container_img img {
-        width: 300px;
+        max-width: 280px;
     }
 
     .banner input[type="email"], 
     .edm input[type="email"] {
-        min-width: 280px;
+        max-width: 260px;
     }
 
     .banner input[type="button"], 
     .edm input[type="button"] {
-        min-width: 300px;
+        max-width: 280px;
     }
 
     .quote {
-        min-width: 240px;
+        width: auto;
+        min-width: 200px;
+    }
+
+    .edm {
+        padding: 80px 10px;
+    }
+
+    .footer {
+        text-align: center;
     }
 
 }
