@@ -19,7 +19,7 @@
 <body>
   
   <div class="warp">
-  <div class="header padding-x-100">
+  <div class="header padding-x max-width">
     <div class="header_logo">
       <img src="./images/logo.svg" alt="Fylo">
     </div>
@@ -31,11 +31,11 @@
       </ul>
     </div>
   </div>
-  <div class="banner padding-x-100">
+  <div class="banner padding-x max-width">
     <div class="banner_text">
-      <h2>
+      <h1>
         All your files in one secure location, accessible anywhere.
-      </h2>
+      </h1>
       <p>
         Fylo stores your most important files in one secure location. 
         Access them wherever you need, share and collaborate with friends, 
@@ -43,10 +43,8 @@
       </p>
       <div class="email_form">
         <form action="">
-          <div>
-            <input type="email" name="" id="banner_email" placeholder="Enter your email...">
-            <span class="email_warn_msg">Please check your email</span>
-          </div>
+          <input type="email" name="" id="banner_email" placeholder="Enter your email...">
+          <span class="email_warn_msg">Please check your email</span>
           <input type="button" value="Get Started">
         </form>
       </div>
@@ -55,16 +53,18 @@
       <img src="./images/illustration-1.svg" alt="email">
     </div>
   </div>
-  <div class="container padding-x-100">
-    <div class="container_text">
-      <h2>
-        Stay productive, wherever you are
-      </h2>
-      <p>
-        Never let location be an issue when accessing your files. Fylo has you 
+  <div class="container_header">
+  </div>
+  <div class="container_bg">
+    <div class="container padding-x max-width">
+      <div class="container_text">
+        <h2>
+          Stay productive, wherever you are
+        </h2>
+        <p>
+          Never let location be an issue when accessing your files. Fylo has you 
         covered for all of your file storage needs.
-      </p>
-      <p>
+        <br><br>
         Securely share files and folders with friends, family and colleagues for 
         live collaboration. No email attachments required!
       </p>
@@ -97,75 +97,82 @@
       <img src="./images/illustration-2.svg" alt="">
     </div>
   </div>
-  <div class="edm padding-x-100">
-    <div class="edm_text">
-     <h3>
-      Get early access today
-     </h3>
-     <p>
-      It only takes a minute to sign up and our free starter tier is extremely generous. 
-      If you have any questions, our support team would be happy to help you.
-     </p> 
-    </div>
-    <div class="edm_form">
-      <form action="">
-        <input type="email" placeholder="email@example.com">
-        <span class="email_warn_msg">Please check your email</span>
-        <input type="button" value="Get Started For Free">
-      </form>
+  </div>
+  <div class="edm_bg">
+    <div class="edm padding-x max-width">
+      <div class="edm_text">
+        <h3>
+          Get early access today
+        </h3>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.
+       </p> 
+      </div>
+      <div class="edm_form">
+        <form action="">
+          <input type="email" placeholder="email@example.com">
+          <span class="email_warn_msg">Please check your email</span>
+          <input type="button" value="Get Started For Free">
+        </form>
+      </div>
     </div>
   </div>
-  <div class="footer padding-x-100">
-    <div class="footer_logo">
-      <img src="./images/logo_white.png" alt="">
-    </div>
-    <div class="footer_company">
-      <div class="company_phone">
-        <img src="./images/icon-phone.svg" alt="">
-        Phone: +1-543-123-4567
+  <div class="footer_bg">
+    <div class="footer padding-x max-width">
+      <div class="footer_logo">
+        <img src="./images/logo_white.png" alt="">
       </div>
-      <div class="company_email">
-        <img src="./images/icon-email.svg" alt="">
-        example@fylo.com
+      <div class="footer_company">
+        <div class="company_phone">
+          <img src="./images/icon-phone.svg" alt="">
+          Phone: +1-543-123-4567
+        </div>
+        <div class="company_email">
+          <img src="./images/icon-email.svg" alt="">
+          example@fylo.com
+        </div>
       </div>
-    </div>
-    <div class="footer_about">
-      <p>
-        About Us
+      <!-- <div class="footer_list"> -->
+        <div class="footer_about">
+          <p>
+            About Us
+          </p>
+          <ul>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer_contact">
+          <p>
+            Contact Us
+          </p>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      <!-- </div> -->
+      <div class="footer_media">
+        <a href="#">
+          <img src="./images/icon-facebook.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-twitter.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-instagram.svg" alt="">
+        </a>
+      </div>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.notion.so/sakayi/4c54f4bd5aa44a9f8dbd7b49b8216ec9">Ayu</a>.
       </p>
-      <ul>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </div>
-    <div class="footer_contact">
-      <p>
-        Contact Us
-      </p>
-      <ul>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </div>
-    <div class="footer_media">
-      <a href="#">
-        <img src="./images/icon-facebook.svg" alt="">
-      </a>
-      <a href="#">
-        <img src="./images/icon-twitter.svg" alt="">
-      </a>
-      <a href="#">
-        <img src="./images/icon-instagram.svg" alt="">
-      </a>
     </div>
   </div>
 </div>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.notion.so/sakayi/4c54f4bd5aa44a9f8dbd7b49b8216ec9">Ayu</a>.
-    </p>
+<footer>
   </footer>
 </body>
 </html>
